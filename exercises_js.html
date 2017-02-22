@@ -13,47 +13,47 @@
 
  console.log(pet)
 
- var books = [
-   {
-     title: "Things Fall Apart",
-     author: "Chinua Achebe",
-     isbn: "7891078092345",
-     pages: 224,
-     yearOfPbulication: 1958
-   },
-   {
-    title: "Mine Boy",
-    author: "Peter Abrahams",
-    isbn: "3456789087609",
-    pages: 184,
-    yearOfPbulication: 1946
-   }
- ]
- books.push (
- {
-  title: "Romeo and Juliet",
-  author: "William Shakspear", 
-  isbn: "978-1505259568",
-  pages: 92,
-  yearOfPbulication: 1597
- }
-  )
- console.log(books)
+ // var books = [
+ //   {
+ //     title: "Things Fall Apart",
+ //     author: "Chinua Achebe",
+ //     isbn: "7891078092345",
+ //     pages: 224,
+ //     yearOfPbulication: 1958
+ //   },
+ //   {
+ //    title: "Mine Boy",
+ //    author: "Peter Abrahams",
+ //    isbn: "3456789087609",
+ //    pages: 184,
+ //    yearOfPbulication: 1946
+ //   }
+ // ]
+ // books.push (
+ // {
+ //  title: "Romeo and Juliet",
+ //  author: "William Shakspear", 
+ //  isbn: "978-1505259568",
+ //  pages: 92,
+ //  yearOfPbulication: 1597
+ // }
+ //  )
+ // console.log(books)
  
- for (var i = 10; i > 0; i--) {
-  console.log(i);
- }
- console.log("BLASTOFF")
+ // for (var i = 10; i > 0; i--) {
+ //  console.log(i);
+ // }
+ // console.log("BLASTOFF")
 
 
- var total = 0;
- var numbers = [5, 23, 98, 234, 1, 0, 3, 177];
- for (var i = 0; i < numbers.length; i++) {
-  total += numbers[i];
-  console.log(numbers[i]) 
- }
- var avg = total/numbers.length;
- console.log(avg)
+ // var total = 0;
+ // var numbers = [5, 23, 98, 234, 1, 0, 3, 177];
+ // for (var i = 0; i < numbers.length; i++) {
+ //  total += numbers[i];
+ //  console.log(numbers[i]) 
+ // }
+ // var avg = total/numbers.length;
+ // console.log(avg)
 
 
 
@@ -89,6 +89,18 @@ console.log(total/numbers.length)
 }; 
 average(numbers);
 
+
+var book = {
+     title: "Things Fall Apart",
+     author: "Chinua Achebe",
+     isbn: "7891078092345",
+     pages: 224,
+     yearOfPbulication: 1958,
+     printDetails: function() {
+    return "My favorite book is" + " " + " " + this.title + " " + "by" + " " + this.author + " " + "its isbn is" + " " + this.isbn + " " + "with" + this.pages + " "  + "pages" + ", and it was published in" + " " + this.yearOfPbulication;
+  }
+  }
+    console.log(book.printDetails());
 
 </script>
 </body>
